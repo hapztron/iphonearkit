@@ -223,7 +223,32 @@
     tempLocation = [[CLLocation alloc] initWithLatitude:50.528717 longitude:-3.606691];
     tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Newton Abbot"];
     [locationArray addObject:tempCoordinate];
-    
+	
+	
+	/* Personal Locations */
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.354373 longitude:103.932649];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Block 871, Tampines"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.355422 longitude:103.934626];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Tampines Central Community Complex"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.359422 longitude:103.930991];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Bef Tampines Ave 5"];
+    [locationArray addObject:tempCoordinate];
+	
+    tempLocation = [[CLLocation alloc] initWithLatitude:1.333477 longitude:103.891903];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Ubi One"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.331878 longitude:103.894438];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"HDB CP"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.353279 longitude:103.934411];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Opp Blk 853"];
+    [locationArray addObject:tempCoordinate];
     
     return locationArray;
 }
