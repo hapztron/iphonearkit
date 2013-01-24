@@ -223,6 +223,14 @@
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
 	
+	tempLocation = [[CLLocation alloc] initWithLatitude:14.878682 longitude:102.021017];
+	
+	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
+	tempCoordinate.title = @"Suranaree University of Technology";
+	
+	[tempLocationArray addObject:tempCoordinate];
+	[tempLocation release];
+	
 	
 	[viewController addCoordinates:tempLocationArray];
 	[tempLocationArray release];
