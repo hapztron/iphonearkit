@@ -44,7 +44,7 @@
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
 	
-	
+	/*
 	tempLocation = [[CLLocation alloc] initWithLatitude:45.523875 longitude:-122.670399];
 	
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
@@ -61,7 +61,7 @@
 	
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
-	
+	*/
 	
 	tempLocation = [[CLLocation alloc] initWithLatitude:30.268735 longitude:-97.745209];
 	
@@ -71,7 +71,7 @@
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
 	
-	
+	/*
 	tempLocation = [[CLLocation alloc] initWithLatitude:51.500152 longitude:-0.126236];
 	
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
@@ -90,6 +90,7 @@
 	
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
+	 */
 	
 	
 	tempLocation = [[CLLocation alloc] initWithLatitude:47.620973 longitude:-122.347276];
@@ -100,7 +101,7 @@
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
 	
-	
+	/*
 	tempLocation = [[CLLocation alloc] initWithLatitude:20.593684 longitude:78.96288];
 	
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
@@ -214,15 +215,46 @@
 	
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
+	*/
 	
-	tempLocation = [[CLLocation alloc] initWithLatitude:32.781078 longitude:-96.797111];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.37413 longitude:103.932759];
 	
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
-	tempCoordinate.title = @"Dallas";
+	tempCoordinate.title = @"IKEA Tampines";
 	
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
 	
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.355411 longitude:103.934674];
+	
+	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
+	tempCoordinate.title = @"Tampines Central Community Complex";
+	
+	[tempLocationArray addObject:tempCoordinate];
+	[tempLocation release];
+	 
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:13.725544 longitude:100.476236];
+	
+	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
+	tempCoordinate.title = @"Bangkok";
+	
+	[tempLocationArray addObject:tempCoordinate];
+	[tempLocation release];
+	
+	
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:14.974657 longitude:102.098168];
+	
+	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
+	tempCoordinate.title = @"Nakhon Ratchasima";
+	
+	[tempLocationArray addObject:tempCoordinate];
+	[tempLocation release];
+	
+	/*
 	tempLocation = [[CLLocation alloc] initWithLatitude:14.878682 longitude:102.021017];
 	
 	tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation];
@@ -230,12 +262,13 @@
 	
 	[tempLocationArray addObject:tempCoordinate];
 	[tempLocation release];
-	
+	*/
 	
 	[viewController addCoordinates:tempLocationArray];
 	[tempLocationArray release];
 		
-	CLLocation *newCenter = [[CLLocation alloc] initWithLatitude:37.41711 longitude:-122.02528];
+	
+	CLLocation *newCenter = [[CLLocation alloc] initWithLatitude:1.354438 longitude:103.932568];
 	
 	viewController.centerLocation = newCenter;
 	[newCenter release];
@@ -248,8 +281,8 @@
     [window makeKeyAndVisible];
 }
 
-#define BOX_WIDTH 150
-#define BOX_HEIGHT 100
+#define BOX_WIDTH 200
+#define BOX_HEIGHT 150
 
 - (UIView *)viewForCoordinate:(ARCoordinate *)coordinate {
 	
@@ -268,7 +301,7 @@
 	titleLabel.frame = CGRectMake(BOX_WIDTH / 2.0 - titleLabel.frame.size.width / 2.0 - 4.0, 0, titleLabel.frame.size.width + 8.0, titleLabel.frame.size.height + 8.0);
 	
 	UIImageView *pointView = [[UIImageView alloc] initWithFrame:CGRectZero];
-	pointView.image = [UIImage imageNamed:@"location.png"];
+	pointView.image = [UIImage imageNamed:@"location_org.png"];
 	pointView.frame = CGRectMake((int)(BOX_WIDTH / 2.0 - pointView.image.size.width / 2.0), (int)(BOX_HEIGHT / 2.0 - pointView.image.size.height / 2.0), pointView.image.size.width, pointView.image.size.height);
 
 	[tempView addSubview:titleLabel];
