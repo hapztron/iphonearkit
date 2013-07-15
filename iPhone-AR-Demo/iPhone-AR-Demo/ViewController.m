@@ -225,7 +225,7 @@
     [locationArray addObject:tempCoordinate];
 	
 	
-	/* Personal Locations */
+	/* Locations in Singapore */
 	tempLocation = [[CLLocation alloc] initWithLatitude:1.354373 longitude:103.932649];
     tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Block 871, Tampines"];
     [locationArray addObject:tempCoordinate];
@@ -249,7 +249,31 @@
 	tempLocation = [[CLLocation alloc] initWithLatitude:1.353279 longitude:103.934411];
     tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Opp Blk 853"];
     [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.346077 longitude:103.681186];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"NTU CPE"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.33759 longitude:103.697537];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Pioneer MRT"];
+    [locationArray addObject:tempCoordinate];
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.344232 longitude:103.680193];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Nanyang Auditorium"];
+    [locationArray addObject:tempCoordinate];
     
+	
+	tempLocation = [[CLLocation alloc] initWithLatitude:1.28931 longitude:103.84416];
+    tempCoordinate = [ARGeoCoordinate coordinateWithLocation:tempLocation locationTitle:@"Brewerkz at Clarke Quay"];
+    [locationArray addObject:tempCoordinate];
+	
+	/* Locations in Madrid, Spain */
+	
+	
+	/* Locations in San Sebastian, Spain */
+	
+	
+	
     return locationArray;
 }
 
